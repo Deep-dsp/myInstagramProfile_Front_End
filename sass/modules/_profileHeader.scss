@@ -108,7 +108,10 @@
         }
     }
 }
-
+// 
+.post-mobile-follows{
+    display: none;
+}
 // Media Queries
 
 @media only screen and (max-width:900px){
@@ -134,33 +137,75 @@
 }
 
 @media only screen and (max-width:800px){
-    .content-second-block{
-        .rootre-title{
-            
-            .btn-grp{
-                width: 40%;
+    .container{
+        position: relative;
+        height: 85vh;
+
+        .content-second-block{
+            .rootre-title{        
+                .btn-grp{
+                    width: 40%;
+                }
+            }
+        }
+
+        .post-follows{
+            display: none;
+        }
+
+        .post-mobile-follows{
+            display: flex;
+            justify-content: space-evenly;
+            margin-top: 1em;
+
+            border-top: 1px solid rgb(224, 224, 224);
+            border-bottom: 1px solid rgb(224, 224, 224);
+            .post{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                padding: 1em 0;
+                p{
+                    margin: 0;
+                }
+
+                p:first-child{
+                    font-weight: 600;
+                }
+
+                p:last-child{
+                    color: rgb(173, 173, 173);
+                }
             }
         }
     }
 }
 
 @media only screen and (max-width:650px){
-    .content-second-block{
-        .rootre-title{
-            
-            .btn-grp{
-                width: 50%;
+    .container{
+        height: 80vh;
+        .profile-header{
+            .content-second-block{
+                .rootre-title{           
+                    .btn-grp{
+                        width: 50%;
+                    }
+                }
             }
         }
     }
 }
 
 @media only screen and (max-width:550px){
-    .content-second-block{
-        .rootre-title{
-            
-            .btn-grp{
-                width: 60%;
+    .container{
+        height: 75vh;
+        .profile-header{
+            .content-second-block{
+                .rootre-title{           
+                    .btn-grp{
+                        width: 60%;
+                    }
+                }
             }
         }
     }
