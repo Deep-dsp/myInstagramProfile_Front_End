@@ -12,7 +12,7 @@ window.addEventListener("load", ()=>{
     
     for(let i=0; i<storylistimg.length; i++){
         storyimg.src =`/uploads/story-icons/${storylistimg[i]}.jpg`;
-        storyblock.appendChild(storyimg);
+        storyname.innerText = `${storylist[i]}`;
         storyparent.appendChild(storyblock.cloneNode(true));
     }
 });
