@@ -1,0 +1,52 @@
+.container{
+    max-width: 935px;
+    margin: 0 auto;
+    background: red;
+
+    .profile-header, .post-follows, .post{
+        display: flex;
+    }
+
+    .profile-header{
+
+        justify-content: baseline;
+        padding: 1em 0;
+        .content-first-block{
+            width: 30%;
+        }
+
+        .content-second-block{
+            width: 70%;
+
+            .margin-header{
+                margin-bottom: 2em;
+            }
+
+            p{
+                margin: 0;
+                font-size: 1.125em;
+            }
+
+            .post-follows{
+                width: 60%;
+                justify-content: space-between;
+
+                p:first-child{
+                    font-weight: 600;
+                }
+
+                p:last-child{
+                    margin-left: 0.35em;
+                }
+            }
+        }
+    }
+
+    .about-rootree ul{
+        padding: 0;
+        li{
+            text-decoration: none;
+            list-style: none;
+        }
+    }
+}
