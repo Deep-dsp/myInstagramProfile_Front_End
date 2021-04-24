@@ -1,4 +1,5 @@
 .story-container{
+    // display: none;
     .story-block{
         
         display: flex;
@@ -19,7 +20,6 @@
             }
 
             p{
-                font-size: 1rem;
                 font-weight: 600;
             }
         }
@@ -27,5 +27,16 @@
         .story:hover{
             cursor: pointer;
         }
+
+        .story:first-child{
+            display: none;
+        }
+    }
+}
+
+// Media Queries
+@media only screen and (max-width: 805px){
+    .story{
+        font-size: 0.6rem;
     }
 }

@@ -1,7 +1,6 @@
 .container{
     max-width: 935px;
     margin: 0 auto;
-    // background: red;
 
     .profile-header, .post-follows, .post, .rootre-title{
         display: flex;
@@ -105,6 +104,63 @@
 
             a{
                 text-decoration: none;
+            }
+        }
+    }
+}
+
+// Media Queries
+
+@media only screen and (max-width:900px){
+    .profile-header{
+        flex-direction: column;
+        justify-content: center;
+        margin-left: 2em;
+
+        .content-second-block{
+            margin-top: 1em;
+
+            .rootre-title{
+                flex-direction: column;
+                align-items: flex-start;
+                
+                .btn-grp{
+                    margin: 1em 0;
+                    justify-content: space-between;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width:800px){
+    .content-second-block{
+        .rootre-title{
+            
+            .btn-grp{
+                width: 40%;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width:650px){
+    .content-second-block{
+        .rootre-title{
+            
+            .btn-grp{
+                width: 50%;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width:550px){
+    .content-second-block{
+        .rootre-title{
+            
+            .btn-grp{
+                width: 60%;
             }
         }
     }
