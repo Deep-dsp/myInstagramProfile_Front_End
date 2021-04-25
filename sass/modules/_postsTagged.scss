@@ -24,21 +24,25 @@
                 p{
                     font-size: 0.8rem;
                     text-transform: uppercase;
-                    font-weight: 600;
                 }
             }
+
+            
         }
     }
 }
 
-// .post-active-bar{
-//     font-weight: 600;
+.data-content{
+    display: none;
+}
 
-//     &:after{
-//         content: '';
-//         border-bottom: 1px solid #292929;
-//     }
-// }
+.data-content.active{
+    display: block;
+}
+
+a.active-bar{
+    font-weight: bold;
+}
 
 // Media Queries
 @media only screen and (max-width: 800px){
@@ -49,6 +53,7 @@
             width: 100%;
             margin: auto;
             padding: 0;
+            
             li a{
                 svg{
                     width: 30px;
