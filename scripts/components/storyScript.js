@@ -1,3 +1,6 @@
+// This Component is used to
+// display saved story and shuffle them
+
 // Declarations
 const storyparent = document.querySelector('.story-block');
 const storyblock = document.querySelector('.story');
@@ -9,6 +12,21 @@ const storylist = ["Client Love 💗", "In the Office", "Jobs", "RT | Foundation
 
 // Display stories on load
 window.addEventListener("load", ()=>{
+
+    // shuffle stories
+    var currentIndex = storylistimg.length, temporaryValue, randomIndex;
+    while (0 !== currentIndex) {
+        randomIndex = Math.floor(Math.random() * currentIndex);
+        currentIndex -= 1;
+        temporaryValue = storylistimg[currentIndex];
+        storylistimg[currentIndex] = storylistimg[randomIndex];
+        storylistimg[randomIndex] = temporaryValue;
+
+        // name
+        temporaryValue = storylist[currentIndex];
+        storylist[currentIndex] = storylist[randomIndex];
+        storylist[randomIndex] = temporaryValue;
+    }
     
     for(let i=0; i<storylistimg.length; i++){
         storyimg.src =`/uploads/story-icons/${storylistimg[i]}.jpg`;
