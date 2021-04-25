@@ -1,3 +1,4 @@
+import './components/darkmode.js';
 import './components/tabMenu.js';
 import './components/storyScript.js';
 

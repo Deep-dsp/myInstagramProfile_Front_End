@@ -1,0 +1,76 @@
+.mode-container{
+    @include alignfull;
+    position: fixed;
+    top: 2%;
+    right: 2%;
+
+    button{
+        padding: 0.2em;
+        border-radius: 10px;
+        background: none;
+        svg{
+            width: 35px;
+        }
+    }
+
+    button:hover{
+        cursor: pointer;
+    }
+}
+
+.dark-mode-on{
+    background: #434343;
+    color: #fff;
+
+    .about-rootree{
+        .rootree-profile{
+            li:first-child{
+                color: #fff; 
+            }
+             li a{
+                color: #fff;
+            }
+        }
+    }
+
+    .rootre-title{
+        .btn-grp{
+            .btn{
+                background: none;
+                border: 1px solid #fff;
+                transition: 0.5s ease;
+            }
+
+            .btn:hover{
+                background: #fff;
+                a{
+                    color: #434343;
+                }
+            }
+
+            .btn:nth-child(2):hover{
+                a{
+                    content: url('https://img.icons8.com/ios-filled/10/000000/expand-arrow--v1.png');
+                }
+            }
+
+            .dots{
+                a{
+                    content: url('https://img.icons8.com/material-rounded/24/ffffff/dots-loading--v3.png');
+                }
+            }
+        }
+    }
+
+    button{
+        background: #fff;
+        border: none;
+    }
+
+    .post-tagged-container{
+        ul li a, svg{
+            fill: #fff;
+            color: #fff;
+        }
+    }
+}
