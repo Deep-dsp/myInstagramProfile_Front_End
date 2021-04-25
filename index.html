@@ -21,7 +21,7 @@
                         <div class="btn">
                             <a href="#" class="btn-follow">Follow</a>
                         </div>
-                        <div class="btn">
+                        <div class="btn" id="btn">
                             <a href="#" class="btn-arrow">
                                 <img src="https://img.icons8.com/ios-filled/10/ffffff/expand-arrow--v1.png"/>
                             </a>
@@ -124,14 +124,25 @@
             </ul>
         </div>
 
-        <!-- <div class="tab-content">
+        <div class="tab-content">
             <div id="post-content" class="data-content active">
                 <div class="post-container">
-                    <img src="/uploads/posts/136669390_425875312093233_3025457713389608371_n.jpg" alt="">
+                    
                 </div>
-                <div class="post-container">
+                <!-- Temporary Template for image-gallery container -->
+                <template>
                     <img src="/uploads/posts/136669390_425875312093233_3025457713389608371_n.jpg" alt="">
-                </div>
+                    <div class="like-comment-con">
+                        <div class="like">
+                            <img src="https://img.icons8.com/ios-glyphs/30/ffffff/like--v1.png"/>
+                            <p>10</p>
+                        </div>
+                        <div class="like">
+                            <img src="https://img.icons8.com/ios-glyphs/30/ffffff/topic.png"/>
+                            <p>10</p>
+                        </div>
+                    </div>
+                </template>
             </div>
             <div id="IGTV-content" class="data-content">
                 IGTV
@@ -139,8 +150,9 @@
             <div id="tagged-content" class="data-content">
                 Tagged
             </div>
-        </div> -->
+        </div>
 
+        <!-- Dark Mode Icon Container Toggle -->
         <div class="mode-container">
             <button>
                 <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-brightness-low" viewBox="0 0 16 16">
@@ -148,6 +160,7 @@
                   </svg>
             </button>
         </div>
+        <!-- Dark Mode Icon Container Toggle  Ends-->
     </section>
     <script defer type="module" src="/scripts/scripts.js"></script>
 </body>
