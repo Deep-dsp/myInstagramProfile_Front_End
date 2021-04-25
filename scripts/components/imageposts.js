@@ -1,4 +1,4 @@
-const postcon = document.querySelector('#post-content');
+const postcon = document.querySelector('.tab-issue-solver');
 const post = postcon.querySelector('.post-container');
 const postimg = post.querySelector('img');
 // List of posts
