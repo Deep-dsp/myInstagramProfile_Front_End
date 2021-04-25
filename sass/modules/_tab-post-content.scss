@@ -1,0 +1,9 @@
+.tab-content{
+
+    #post-content{
+        // display: grid;
+        // grid-template-columns: repeat(auto-fit, minmax(293px, 1fr));
+        display: flex;
+        flex-wrap: wrap;
+    }
+}
