@@ -1,7 +1,11 @@
 header{
-    max-width: 935px;
-    margin: 0 auto;
+    background: #fff;
+    border-top: 1px solid rgb(224, 224, 224);
+    border-bottom: 1px solid rgb(224, 224, 224);
     nav{
+        max-width: 935px;
+        margin: 0 auto;
+
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -13,9 +17,42 @@ header{
             width: 20%;
             padding: 0;
 
+            li{
+                position: relative;
+            }
+
             li:last-child a img{
                 border-radius: 50%;
+            }
+
+            li:first-child::after{
+                content: '';
+                width: 5px;
+                height: 5px;
+                border-radius: 50%;
+                background: red;
+            
+                position: absolute;
+                top: 105%;
+                bottom: 0;
+                left: 50%;
+                transform: translate(-50%, 0);
             }
         }
     }
 }
+
+// Nav list active link CSS class
+// .nav-active-link::after{
+//     content: '';
+//     width: 5px;
+//     height: 5px;
+//     border-radius: 50%;
+//     background: red;
+
+//     position: absolute;
+//     top: 105%;
+//     bottom: 0;
+//     left: 50%;
+//     transform: translate(-50%, 0);
+// }
