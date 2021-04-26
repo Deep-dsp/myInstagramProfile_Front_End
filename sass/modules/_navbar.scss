@@ -45,7 +45,7 @@ header{
         .nav-search{
             position: fixed;
             left: 0;
-            bottom: 1%;
+            bottom: 0;
             z-index: 99;
 
             width: 100%;
@@ -54,19 +54,21 @@ header{
                 display: flex;
                 justify-content: center;
                 align-items:center;
+                background: #fff;
+                padding: 0.5em 0;
                 .input-container{
                     width: 50%;
 
                     input[type="text"]{
                         width: 100%;
                         padding: 12px 20px;
-                        border: none;
+                        border: 1px solid #434343;
                         border-radius: 10px;
-                        background: #434343;
+                        // background: #cfcfcf;
                     }
                     
                     ::placeholder{
-                        color: rgb(214, 214, 214);
+                        color: #434343;
                     }
                 }
             }
