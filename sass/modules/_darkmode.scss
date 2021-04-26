@@ -93,10 +93,22 @@
         border-bottom: 1px solid rgb(155, 155, 155);
         background: #2f2f2f;
         nav{
+            .logo{
+                img{
+                    filter: invert(1);
+                }
+            }
             .nav-actions{
                 li:first-child::after{
                     background: #fff;
                 }
+
+                li:nth-child(2){
+                    img{
+                        content: url('https://img.icons8.com/ios/24/ffffff/search--v1.png"');
+                    }
+                }
+
                 li a svg{
                     fill: #fff;
                 }
@@ -121,5 +133,4 @@
             }
         }
     }
-
 }

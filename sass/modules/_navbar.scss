@@ -14,7 +14,7 @@ header{
             display: flex;
             justify-content: space-between;
             list-style: none;
-            width: 20%;
+            width: 25%;
             padding: 0;
 
             li{
@@ -45,7 +45,14 @@ header{
         .nav-search{
             position: fixed;
             left: 0;
-            bottom: 0;
+            bottom: -10%;
+            opacity: 0;
+
+            transition:  bottom 0.4s ease;
+            -webkit-transition:  bottom 0.4s ease;
+            -o-transition:  bottom 0.4s ease;
+            -moz-transition:  bottom 0.4s ease;
+
             z-index: 99;
 
             width: 100%;
@@ -71,7 +78,17 @@ header{
                         color: #434343;
                     }
                 }
+
+                .close-button:hover{
+                    cursor: pointer;
+                }
             }
         }
     }
+}
+
+// Search bar anim class
+.nav-anim{
+    bottom: 0 !important;
+    opacity: 1 !important;
 }

@@ -1,9 +1,14 @@
-const navlisticon = document.querySelectorAll('.nav-actions li');
+// Show-hide search container
+// Dot::After rotation
 
-navlisticon.forEach(icon => icon.addEventListener('click',(e)=>{ 
-    e.preventDefault();
-    if(icon.classList.contains('nav-active-link')){
-        icon.classList.remove('nav-active-link');    
-    }  
-    icon.classList.add('nav-active-link');
-}))
+const search = document.querySelector('.nav-actions li.search');
+const navsearch = document.querySelector('.nav-search');
+const close = document.querySelector('.close-button');
+
+search.addEventListener('click', ()=>{
+    navsearch.classList.toggle('nav-anim');
+})
+
+close.addEventListener('click', ()=>{
+    navsearch.classList.remove('nav-anim');
+})
