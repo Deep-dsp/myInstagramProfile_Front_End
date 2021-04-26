@@ -1,6 +1,7 @@
-.container{
+.insta-container{
     max-width: 935px;
     margin: 0 auto;
+    padding-top: 5em;
     .profile-header, .post-follows, .post, .rootre-title{
         display: flex;
     }
