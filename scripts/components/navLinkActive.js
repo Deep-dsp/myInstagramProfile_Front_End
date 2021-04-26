@@ -5,5 +5,5 @@ navlisticon.forEach(icon => icon.addEventListener('click',(e)=>{
     if(icon.classList.contains('nav-active-link')){
         icon.classList.remove('nav-active-link');    
     }  
-    // icon.classList.add('nav-active-link');
+    icon.classList.add('nav-active-link');
 }))

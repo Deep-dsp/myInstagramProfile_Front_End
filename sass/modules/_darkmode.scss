@@ -87,4 +87,38 @@
             }
         }
     }
+
+    header{
+        border-top: 1px solid rgb(155, 155, 155);
+        border-bottom: 1px solid rgb(155, 155, 155);
+        background: #2f2f2f;
+        nav{
+            .nav-actions{
+                li:first-child::after{
+                    background: #fff;
+                }
+                li a svg{
+                    fill: #fff;
+                }
+            }
+
+            .search-con{
+                .input-container{
+                    input[type="text"]{
+                        background: #ffffff;
+                    }
+                    ::placeholder{
+                        color: rgb(160, 160, 160);
+                    }
+                }
+
+                .close-button{
+                    img{
+                        content: url("https://img.icons8.com/material/20/C0C0C0/close-window--v1.png");
+                    }
+                }
+            }
+        }
+    }
+
 }
