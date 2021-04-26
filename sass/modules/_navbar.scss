@@ -1,0 +1,21 @@
+header{
+    max-width: 935px;
+    margin: 0 auto;
+    nav{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        ul{
+            display: flex;
+            justify-content: space-between;
+            list-style: none;
+            width: 20%;
+            padding: 0;
+
+            li:last-child a img{
+                border-radius: 50%;
+            }
+        }
+    }
+}
