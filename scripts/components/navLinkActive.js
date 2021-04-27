@@ -6,7 +6,8 @@ const navsearch = document.querySelector('.nav-search');
 const close = document.querySelector('.close-button');
 
 // Toggle Search bar when click on search icon
-search.addEventListener('click', ()=>{
+search.addEventListener('click', (e)=>{
+    e.preventDefault();
     navsearch.classList.toggle('nav-anim');
 })
 

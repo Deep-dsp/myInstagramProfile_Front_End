@@ -4,6 +4,10 @@ header {
   background: #fff;
   border-top: 1px solid rgb(224, 224, 224);
   border-bottom: 1px solid rgb(224, 224, 224);
+  position: sticky;
+  top: 0;
+  z-index: 99;
+  
   nav {
     max-width: 935px;
     margin: 0 auto;
