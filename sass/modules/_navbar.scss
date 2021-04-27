@@ -63,6 +63,7 @@ header{
                 align-items:center;
                 background: #fff;
                 padding: 0.5em 0;
+                
                 .input-container{
                     width: 50%;
 
@@ -72,6 +73,7 @@ header{
                         border: 1px solid #434343;
                         border-radius: 10px;
                         // background: #cfcfcf;
+                        box-shadow: inset 0px 1px 8px rgba(0, 0, 0, 0.2);
                     }
                     
                     ::placeholder{

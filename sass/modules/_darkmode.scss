@@ -1,17 +1,22 @@
 .mode-container{
     @include alignfull;
     position: fixed;
-    top: 7%;
+    top: 8%;
     right: 2%;
+    background: #434343;
+    border-radius: 10px;
 
     button{
+        
         padding: 0.2em;
         border-radius: 10px;
         background: none;
         display: flex;
         justify-content: center;
         align-items: center;
+
         svg{
+            fill: #fff;
             width: 35px;
         }
     }
@@ -69,6 +74,10 @@
     button{
         background: #fff;
         border: none;
+
+        svg{
+            fill: #434343;
+        }
     }
 
     .post-tagged-container{
@@ -132,5 +141,12 @@
                 }
             }
         }
+    }
+}
+
+// media Queries
+@media only screen and (max-width: 750px){
+    .mode-container{
+        right: 4%;
     }
 }

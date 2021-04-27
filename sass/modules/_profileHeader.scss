@@ -2,6 +2,7 @@
     max-width: 935px;
     margin: 0 auto;
     padding-top: 0.5em;
+
     .profile-header, .post-follows, .post, .rootre-title{
         display: flex;
     }
@@ -108,7 +109,7 @@
         }
     }
 }
-// 
+
 .post-mobile-follows{
     display: none;
 }
@@ -144,7 +145,7 @@
 }
 
 @media only screen and (max-width:800px){
-    .container{
+    .insta-container{
         position: relative;
         height: 85vh;
 
@@ -190,7 +191,7 @@
 }
 
 @media only screen and (max-width:650px){
-    .container{
+    .insta-container{
         height: 80vh;
         .profile-header{
             .content-second-block{
@@ -205,7 +206,7 @@
 }
 
 @media only screen and (max-width:550px){
-    .container{
+    .insta-container{
         height: 75vh;
         .profile-header{
             .content-second-block{
