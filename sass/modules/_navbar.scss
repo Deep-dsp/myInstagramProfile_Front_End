@@ -92,3 +92,72 @@ header{
     bottom: 0 !important;
     opacity: 1 !important;
 }
+
+// Media Queries
+@media only screen and (max-width: 1000px){
+    header{
+        nav{
+            padding: 0 2em;
+        }
+    }
+}
+
+@media only screen and (max-width: 870px){
+    header{
+        nav{
+            ul.nav-actions{
+                width: 28%;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 760px){
+    header{
+        nav{
+            ul.nav-actions{
+                width: 34%;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 630px){
+    header{
+        nav{
+            ul.nav-actions{
+                width: 40%;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 550px){
+    header{
+        nav{
+            ul.nav-actions{
+                width: 45%;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 550px){
+    header{
+        nav{
+            ul.nav-actions{
+                width: 45%;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 510px){
+    header{
+        nav{
+            ul.nav-actions{
+                width: 50%;
+            }
+        }
+    }
+}

@@ -114,12 +114,18 @@
 }
 // Media Queries
 
+@media only screen and (max-width: 1000px){
+    .profile-header{
+        margin-left: 2em;
+    }
+}
+
 @media only screen and (max-width:900px){
 
     .profile-header{
         flex-direction: column;
         justify-content: center;
-        margin-left: 2em;
+        // margin-left: 2em;
 
         .content-second-block{
             margin-top: 1em;
