@@ -1,82 +1,82 @@
-.post-tagged-container{
-    margin-top: 1em;
-    border-top: 1px solid rgb(224, 224, 224);
-    ul{
+// Tab Icon/Text Styling
+
+.post-tagged-container {
+  margin-top: 1em;
+  border-top: 1px solid rgb(224, 224, 224);
+  ul {
+    display: flex;
+    justify-content: space-evenly;
+    width: 50%;
+    margin: 0 auto;
+
+    li {
+      list-style: none;
+
+      a {
         display: flex;
-        justify-content: space-evenly;
-        width: 50%;
-        margin: 0 auto;
-
-        li {
-            list-style: none;
-
-            a{
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                color: #434343;
-                svg{
-                    width: 12px;
-                    height: auto;
-                    margin-right: 0.35em
-                }
-
-                p{
-                    font-size: 0.8rem;
-                    text-transform: uppercase;
-                }
-            }
-
-            
+        justify-content: center;
+        align-items: center;
+        color: #434343;
+        svg {
+          width: 12px;
+          height: auto;
+          margin-right: 0.35em;
         }
+
+        p {
+          font-size: 0.8rem;
+          text-transform: uppercase;
+        }
+      }
     }
+  }
 }
 
-.data-content{
-    display: none;
+.data-content {
+  display: none;
 }
 
-.data-content.active{
-    display: block;
+.data-content.active {
+  display: block;
 }
 
-a.active-bar{
-    font-weight: bold;
+a.active-bar {
+  font-weight: bold;
 }
 
 // Media Queries
-@media only screen and (max-width: 800px){
-    .post-tagged-container{
-        border: 0;
+@media only screen and (max-width: 800px) {
+  .post-tagged-container {
+    border: 0;
 
-        ul{
-            width: 100%;
-            margin: auto;
-            padding: 0;
-            
-            li a{
-                svg{
-                    width: 30px;
-                    height: auto;
-                    margin: 0;
-                }
+    ul {
+      width: 100%;
+      margin: auto;
+      padding: 0;
 
-                p{
-                    display: none;
-                }
-            }
-
-            li:first-child{
-                a svg{
-                    padding-right: 1.5em;
-                }
-            }
-
-            li:last-child{
-                a svg{
-                    padding-left: 1.5em;
-                }
-            }
+      li a {
+        svg {
+          width: 30px;
+          height: auto;
+          margin: 0;
         }
+
+        p {
+          display: none;
+        }
+      }
+
+      li:first-child {
+        a svg {
+          padding-right: 1.5em;
+        }
+      }
+
+      li:last-child {
+        a svg {
+          padding-left: 1.5em;
+        }
+      }
     }
+  }
 }

@@ -1,152 +1,157 @@
-.mode-container{
-    @include alignfull;
-    position: fixed;
-    top: 8%;
-    right: 2%;
-    background: #434343;
+// DARK MODE Button Styling
+// And Style for DARK MODE THEME
+
+.mode-container {
+  @include alignfull;
+  position: fixed;
+  top: 8%;
+  right: 2%;
+  background: #434343;
+  border-radius: 10px;
+
+  button {
+    padding: 0.2em;
     border-radius: 10px;
+    background: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
-    button{
-        
-        padding: 0.2em;
-        border-radius: 10px;
-        background: none;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-
-        svg{
-            fill: #fff;
-            width: 35px;
-        }
+    svg {
+      fill: #fff;
+      width: 35px;
     }
+  }
 
-    button:hover{
-        cursor: pointer;
-    }
+  button:hover {
+    cursor: pointer;
+  }
 }
 
-// Javascript Toggle Classes
-.dark-mode-on{
-    background: #434343;
-    color: #fff;
+// Javascript Toggle Classes to DARK MODE
+.dark-mode-on {
+  background: #434343;
+  color: #fff;
 
-    .about-rootree{
-        .rootree-profile{
-            li:first-child{
-                color: #fff; 
-            }
-             li a{
-                color: #fff;
-            }
-        }
+  .about-rootree {
+    .rootree-profile {
+      li:first-child {
+        color: #fff;
+      }
+      li a {
+        color: #fff;
+      }
     }
+  }
 
-    .rootre-title{
-        .btn-grp{
-            .btn{
-                background: none;
-                border: 1px solid #fff;
-                transition: 0.5s ease;
-            }
+  .rootre-title {
+    .btn-grp {
+      .btn {
+        background: none;
+        border: 1px solid #fff;
+        transition: 0.5s ease;
+      }
 
-            .btn:hover{
-                background: #fff;
-                a{
-                    color: #434343;
-                }
-            }
-
-            .btn:nth-child(2):hover{
-                a{
-                    content: url('https://img.icons8.com/ios-filled/10/000000/expand-arrow--v1.png');
-                }
-            }
-
-            .dots{
-                a{
-                    content: url('https://img.icons8.com/material-rounded/24/ffffff/dots-loading--v3.png');
-                }
-            }
-        }
-    }
-
-    button{
+      .btn:hover {
         background: #fff;
-        border: none;
-
-        svg{
-            fill: #434343;
+        a {
+          color: #434343;
         }
-    }
+      }
 
-    .post-tagged-container{
-        ul li a, svg{
-            fill: #fff;
-            color: #fff;
+      .btn:nth-child(2):hover {
+        a {
+          content: url("https://img.icons8.com/ios-filled/10/000000/expand-arrow--v1.png");
         }
-    }
+      }
 
-    .footer-bar{
-        a p, select, p{
-            color: rgb(207, 207, 207);
-
-            option{
-                color: #434343;
-            }
+      .dots {
+        a {
+          content: url("https://img.icons8.com/material-rounded/24/ffffff/dots-loading--v3.png");
         }
+      }
     }
+  }
 
-    header{
-        border-top: 1px solid rgb(155, 155, 155);
-        border-bottom: 1px solid rgb(155, 155, 155);
+  button {
+    background: #fff;
+    border: none;
+
+    svg {
+      fill: #434343;
+    }
+  }
+
+  .post-tagged-container {
+    ul li a,
+    svg {
+      fill: #fff;
+      color: #fff;
+    }
+  }
+
+  .footer-bar {
+    a p,
+    select,
+    p {
+      color: rgb(207, 207, 207);
+
+      option {
+        color: #434343;
+      }
+    }
+  }
+
+  header {
+    border-top: 1px solid rgb(155, 155, 155);
+    border-bottom: 1px solid rgb(155, 155, 155);
+    background: #2f2f2f;
+    nav {
+      .logo {
+        img {
+          filter: invert(1);
+        }
+      }
+      .nav-actions {
+        li:first-child::after {
+          background: #fff;
+        }
+
+        li:nth-child(2) {
+          img {
+            content: url('https://img.icons8.com/ios/24/ffffff/search--v1.png"');
+          }
+        }
+
+        li a svg {
+          fill: #fff;
+        }
+      }
+
+      .search-con {
         background: #2f2f2f;
-        nav{
-            .logo{
-                img{
-                    filter: invert(1);
-                }
-            }
-            .nav-actions{
-                li:first-child::after{
-                    background: #fff;
-                }
-
-                li:nth-child(2){
-                    img{
-                        content: url('https://img.icons8.com/ios/24/ffffff/search--v1.png"');
-                    }
-                }
-
-                li a svg{
-                    fill: #fff;
-                }
-            }
-
-            .search-con{
-                background: #2f2f2f;
-                .input-container{
-                    input[type="text"]{
-                        background: #ffffff;
-                    }
-                    ::placeholder{
-                        color: rgb(160, 160, 160);
-                    }
-                }
-
-                .close-button{
-                    img{
-                        content: url("https://img.icons8.com/material/20/C0C0C0/close-window--v1.png");
-                    }
-                }
-            }
+        .input-container {
+          input[type="text"] {
+            background: #ffffff;
+          }
+          ::placeholder {
+            color: rgb(160, 160, 160);
+          }
         }
+
+        .close-button {
+          img {
+            content: url("https://img.icons8.com/material/20/C0C0C0/close-window--v1.png");
+          }
+        }
+      }
     }
+  }
 }
 
 // media Queries
-@media only screen and (max-width: 750px){
-    .mode-container{
-        right: 4%;
-    }
+@media only screen and (max-width: 750px) {
+  .mode-container {
+    right: 4%;
+  }
 }

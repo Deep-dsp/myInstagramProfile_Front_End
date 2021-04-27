@@ -1,221 +1,227 @@
-.insta-container{
-    max-width: 935px;
-    margin: 0 auto;
-    padding-top: 0.5em;
+//  Profile Header styling - Contains Company logo and description
 
-    .profile-header, .post-follows, .post, .rootre-title{
-        display: flex;
+.insta-container {
+
+  max-width: 935px;
+  margin: 0 auto;
+  padding-top: 0.5em;
+
+  .profile-header,
+  .post-follows,
+  .post,
+  .rootre-title {
+    display: flex;
+  }
+
+  .rootre-title {
+    align-items: center;
+
+    .btn-grp {
+      width: 35%;
+
+      display: flex;
+      justify-content: space-evenly;
+      align-items: center;
+      align-items: center;
+      margin-left: 1.2em;
+
+      .btn {
+        background: rgb(0, 144, 246);
+        border-radius: 5px;
+      }
+
+      .btn:first-child {
+        font-size: 0.95rem;
+        padding: 0.5em 2em;
+        a {
+          color: #fff;
+          font-weight: 400;
+        }
+      }
+
+      .btn:nth-child(2) {
+        padding: 0.45em 0.8em;
+      }
+    }
+  }
+
+  .profile-header {
+    justify-content: baseline;
+    padding: 1em 0;
+
+    .content-first-block {
+      width: 40%;
+
+      img {
+        width: 60%;
+
+        border-radius: 50%;
+        padding: 0.35em;
+        border: 2px solid rgb(255, 0, 0);
+        background-color: rgb(248, 248, 248);
+      }
     }
 
-    .rootre-title{
-        align-items: center;
+    .content-second-block {
+      width: 70%;
 
-        .btn-grp{
-            width: 35%;
+      .margin-header {
+        margin-bottom: 2em;
+      }
 
-            display: flex;
-            justify-content: space-evenly;
-            align-items: center;
-            align-items: center;
-            margin-left: 1.2em;
+      p {
+        margin: 0;
+        font-size: 1.125em;
+      }
 
-            .btn{
-                background: rgb(0, 144, 246);
-                border-radius: 5px;
-            }
+      .post-follows {
+        width: 60%;
+        justify-content: space-between;
 
-            .btn:first-child{
-                font-size: 0.95rem;
-                padding: 0.5em 2em;
-                a{
-                    color: #fff;
-                    font-weight: 400;
-                }
-            }
-
-            .btn:nth-child(2){
-                padding: 0.45em 0.8em;
-            }
+        p:first-child {
+          font-weight: 600;
         }
+
+        p:last-child {
+          margin-left: 0.35em;
+        }
+      }
+    }
+  }
+
+  .about-rootree ul {
+    padding: 0;
+
+    li {
+      text-decoration: none;
+      list-style: none;
+      margin-bottom: 0.25em;
+
+      display: flex;
+      align-items: center;
     }
 
-    .profile-header{
-
-        justify-content: baseline;
-        padding: 1em 0;
-        .content-first-block{
-            width: 40%;
-
-            img{
-                width: 60%;
-
-                border-radius: 50%;
-                padding:0.35em;
-                border:2px solid rgb(255, 0, 0);
-                background-color:rgb(248, 248, 248);
-            }
-        }
-
-        .content-second-block{
-            width: 70%;
-
-            .margin-header{
-                margin-bottom: 2em;
-            }
-
-            p{
-                margin: 0;
-                font-size: 1.125em;
-            }
-
-            .post-follows{
-                width: 60%;
-                justify-content: space-between;
-
-                p:first-child{
-                    font-weight: 600;
-                }
-
-                p:last-child{
-                    margin-left: 0.35em;
-                }
-            }
-
-        }
+    li:first-child {
+      color: rgb(142, 142, 142);
     }
 
-    .about-rootree ul{
-        padding: 0;
-        li{
-            text-decoration: none;
-            list-style: none;
-            margin-bottom: 0.25em;
+    li:last-child {
+      font-weight: 600;
+      color: rgb(0, 55, 107);
 
-            display: flex;
-            align-items: center;
-        }
-
-        li:first-child{
-            color: rgb(142, 142, 142);
-        }
-
-        li:last-child{
-            font-weight: 600;
-            color: rgb(0,55,107);
-
-            a{
-                text-decoration: none;
-            }
-        }
+      a {
+        text-decoration: none;
+      }
     }
+  }
 }
 
-.post-mobile-follows{
-    display: none;
+.post-mobile-follows {
+  display: none;
 }
+
 // Media Queries
 
-@media only screen and (max-width: 1000px){
-    .profile-header{
-        margin-left: 2em;
-    }
+@media only screen and (max-width: 1000px) {
+  .profile-header {
+    margin-left: 2em;
+  }
 }
 
-@media only screen and (max-width:900px){
+@media only screen and (max-width: 900px) {
+  .profile-header {
+    flex-direction: column;
+    justify-content: center;
+    // margin-left: 2em;
 
-    .profile-header{
+    .content-second-block {
+      margin-top: 1em;
+
+      .rootre-title {
         flex-direction: column;
-        justify-content: center;
-        // margin-left: 2em;
+        align-items: flex-start;
 
-        .content-second-block{
-            margin-top: 1em;
-
-            .rootre-title{
-                flex-direction: column;
-                align-items: flex-start;
-                
-                .btn-grp{
-                    margin: 1em 0;
-                    justify-content: space-between;
-                }
-            }
+        .btn-grp {
+          margin: 1em 0;
+          justify-content: space-between;
         }
+      }
     }
+  }
 }
 
-@media only screen and (max-width:800px){
-    .insta-container{
-        position: relative;
-        height: 85vh;
+@media only screen and (max-width: 800px) {
+  .insta-container {
+    position: relative;
+    height: 85vh;
 
-        .content-second-block{
-            .rootre-title{        
-                .btn-grp{
-                    width: 40%;
-                }
-            }
+    .content-second-block {
+      .rootre-title {
+        .btn-grp {
+          width: 40%;
         }
-
-        .post-follows{
-            display: none;
-        }
-
-        .post-mobile-follows{
-            display: flex;
-            justify-content: space-evenly;
-            margin-top: 1em;
-
-            border-top: 1px solid rgb(224, 224, 224);
-            border-bottom: 1px solid rgb(224, 224, 224);
-
-            .post{
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-                padding: 1em 0;
-                p{
-                    margin: 0;
-                }
-
-                p:first-child{
-                    font-weight: 600;
-                }
-
-                p:last-child{
-                    color: rgb(173, 173, 173);
-                }
-            }
-        }
+      }
     }
+
+    .post-follows {
+      display: none;
+    }
+
+    .post-mobile-follows {
+      display: flex;
+      justify-content: space-evenly;
+      margin-top: 1em;
+
+      border-top: 1px solid rgb(224, 224, 224);
+      border-bottom: 1px solid rgb(224, 224, 224);
+
+      .post {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 1em 0;
+        p {
+          margin: 0;
+        }
+
+        p:first-child {
+          font-weight: 600;
+        }
+
+        p:last-child {
+          color: rgb(173, 173, 173);
+        }
+      }
+    }
+  }
 }
 
-@media only screen and (max-width:650px){
-    .insta-container{
-        height: 80vh;
-        .profile-header{
-            .content-second-block{
-                .rootre-title{           
-                    .btn-grp{
-                        width: 50%;
-                    }
-                }
-            }
+@media only screen and (max-width: 650px) {
+  .insta-container {
+    height: 80vh;
+    .profile-header {
+      .content-second-block {
+        .rootre-title {
+          .btn-grp {
+            width: 50%;
+          }
         }
+      }
     }
+  }
 }
 
-@media only screen and (max-width:550px){
-    .insta-container{
-        height: 75vh;
-        .profile-header{
-            .content-second-block{
-                .rootre-title{           
-                    .btn-grp{
-                        width: 60%;
-                    }
-                }
-            }
+@media only screen and (max-width: 550px) {
+  .insta-container {
+    height: 75vh;
+    .profile-header {
+      .content-second-block {
+        .rootre-title {
+          .btn-grp {
+            width: 60%;
+          }
         }
+      }
     }
+  }
 }

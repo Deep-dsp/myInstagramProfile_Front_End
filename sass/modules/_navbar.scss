@@ -1,165 +1,167 @@
-header{
-    background: #fff;
-    border-top: 1px solid rgb(224, 224, 224);
-    border-bottom: 1px solid rgb(224, 224, 224);
-    nav{
-        max-width: 935px;
-        margin: 0 auto;
+//  Header Styling
 
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
+header {
+  background: #fff;
+  border-top: 1px solid rgb(224, 224, 224);
+  border-bottom: 1px solid rgb(224, 224, 224);
+  nav {
+    max-width: 935px;
+    margin: 0 auto;
 
-        ul{
-            display: flex;
-            justify-content: space-between;
-            list-style: none;
-            width: 25%;
-            padding: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 
-            li{
-                position: relative;
-            }
+    ul {
+      display: flex;
+      justify-content: space-between;
+      list-style: none;
+      width: 25%;
+      padding: 0;
 
-            li:last-child a img{
-                border-radius: 50%;
-            }
+      li {
+        position: relative;
+      }
 
-            li:first-child:after{
-                content: '';
-                width: 5px;
-                height: 5px;
-                border-radius: 50%;
-                background: red;
-            
-                position: absolute;
-                top: 105%;
-                bottom: 0;
-                left: 50%;
-                transform: translate(-50%, 0);
-                margin-top: 0.2em
-            }
-        }
+      li:last-child a img {
+        border-radius: 50%;
+      }
 
-        // Input Field
-        .nav-search{
-            position: fixed;
-            left: 0;
-            bottom: -10%;
-            opacity: 0;
+      li:first-child:after {
+        content: "";
+        width: 5px;
+        height: 5px;
+        border-radius: 50%;
+        background: red;
 
-            transition:  bottom 0.4s ease;
-            -webkit-transition:  bottom 0.4s ease;
-            -o-transition:  bottom 0.4s ease;
-            -moz-transition:  bottom 0.4s ease;
-
-            z-index: 99;
-
-            width: 100%;
-
-            .search-con{
-                display: flex;
-                justify-content: center;
-                align-items:center;
-                background: #fff;
-                padding: 0.5em 0;
-                
-                .input-container{
-                    width: 50%;
-
-                    input[type="text"]{
-                        width: 100%;
-                        padding: 12px 20px;
-                        border: 1px solid #434343;
-                        border-radius: 10px;
-                        // background: #cfcfcf;
-                        box-shadow: inset 0px 1px 8px rgba(0, 0, 0, 0.2);
-                    }
-                    
-                    ::placeholder{
-                        color: #434343;
-                    }
-                }
-
-                .close-button:hover{
-                    cursor: pointer;
-                }
-            }
-        }
+        position: absolute;
+        top: 105%;
+        bottom: 0;
+        left: 50%;
+        transform: translate(-50%, 0);
+        margin-top: 0.2em;
+      }
     }
+
+    // Input Field
+    .nav-search {
+      position: fixed;
+      left: 0;
+      bottom: -10%;
+      opacity: 0;
+
+      transition: bottom 0.4s ease;
+      -webkit-transition: bottom 0.4s ease;
+      -o-transition: bottom 0.4s ease;
+      -moz-transition: bottom 0.4s ease;
+
+      z-index: 99;
+
+      width: 100%;
+
+      .search-con {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: #fff;
+        padding: 0.5em 0;
+
+        .input-container {
+          width: 50%;
+
+          input[type="text"] {
+            width: 100%;
+            padding: 12px 20px;
+            border: 1px solid #434343;
+            border-radius: 10px;
+            // background: #cfcfcf;
+            box-shadow: inset 0px 1px 8px rgba(0, 0, 0, 0.2);
+          }
+
+          ::placeholder {
+            color: #434343;
+          }
+        }
+
+        .close-button:hover {
+          cursor: pointer;
+        }
+      }
+    }
+  }
 }
 
-// Search bar anim class
-.nav-anim{
-    bottom: 0 !important;
-    opacity: 1 !important;
+// Search bar anim class - JS Toggle
+.nav-anim {
+  bottom: 0 !important;
+  opacity: 1 !important;
 }
 
 // Media Queries
-@media only screen and (max-width: 1000px){
-    header{
-        nav{
-            padding: 0 2em;
-        }
+@media only screen and (max-width: 1000px) {
+  header {
+    nav {
+      padding: 0 2em;
     }
+  }
 }
 
-@media only screen and (max-width: 870px){
-    header{
-        nav{
-            ul.nav-actions{
-                width: 28%;
-            }
-        }
+@media only screen and (max-width: 870px) {
+  header {
+    nav {
+      ul.nav-actions {
+        width: 28%;
+      }
     }
+  }
 }
 
-@media only screen and (max-width: 760px){
-    header{
-        nav{
-            ul.nav-actions{
-                width: 34%;
-            }
-        }
+@media only screen and (max-width: 760px) {
+  header {
+    nav {
+      ul.nav-actions {
+        width: 34%;
+      }
     }
+  }
 }
 
-@media only screen and (max-width: 630px){
-    header{
-        nav{
-            ul.nav-actions{
-                width: 40%;
-            }
-        }
+@media only screen and (max-width: 630px) {
+  header {
+    nav {
+      ul.nav-actions {
+        width: 40%;
+      }
     }
+  }
 }
 
-@media only screen and (max-width: 550px){
-    header{
-        nav{
-            ul.nav-actions{
-                width: 45%;
-            }
-        }
+@media only screen and (max-width: 550px) {
+  header {
+    nav {
+      ul.nav-actions {
+        width: 45%;
+      }
     }
+  }
 }
 
-@media only screen and (max-width: 550px){
-    header{
-        nav{
-            ul.nav-actions{
-                width: 45%;
-            }
-        }
+@media only screen and (max-width: 550px) {
+  header {
+    nav {
+      ul.nav-actions {
+        width: 45%;
+      }
     }
+  }
 }
 
-@media only screen and (max-width: 510px){
-    header{
-        nav{
-            ul.nav-actions{
-                width: 50%;
-            }
-        }
+@media only screen and (max-width: 510px) {
+  header {
+    nav {
+      ul.nav-actions {
+        width: 50%;
+      }
     }
+  }
 }

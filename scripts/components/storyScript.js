@@ -28,6 +28,7 @@ window.addEventListener("load", ()=>{
         storylist[randomIndex] = temporaryValue;
     }
     
+    // used Clone Node to clone container = No. of array items -> Display Them.
     for(let i=0; i<storylistimg.length; i++){
         storyimg.src =`/uploads/story-icons/${storylistimg[i]}.jpg`;
         storyname.innerText = `${storylist[i]}`;

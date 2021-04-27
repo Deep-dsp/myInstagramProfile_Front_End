@@ -3,8 +3,8 @@ $nav-bg-color: #fff;
 
 // Mixin
 
-@mixin alignfull{
-    margin-left  : calc( -100vw / 2 + 100% / 2 );
-    margin-right : calc( -100vw / 2 + 100% / 2 );
-    max-width    : 100vw;
+@mixin alignfull {
+  margin-left: calc(-100vw / 2 + 100% / 2);
+  margin-right: calc(-100vw / 2 + 100% / 2);
+  max-width: 100vw;
 }
