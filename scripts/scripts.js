@@ -1,5 +1,4 @@
 // Deepkumar Patel
-// ROOTREEINC Technical Challenge
 // Languages Used:
 //     1) HTML5
 //     2) CSS3 (SaaS framework)
