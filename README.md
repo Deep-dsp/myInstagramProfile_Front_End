@@ -1,5 +1,6 @@
 # My Instagram Profile
 
+![Instagram](/uploads/githubpost.png)
 
 This project has been done with the motive to improve my front-end skills. I have developed this project by taking reference of browser instagram profile by changing some interaction and adding new feature such as,
 
