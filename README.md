@@ -21,7 +21,7 @@ This project has been done with the motive to improve my front-end skills. I hav
 5. Submit a pull request :smile:
 
 ## Getting Started
-This is a basic HTML with Flex box and Grid layout. Some SASS, transitions and JavaScript function. If you don't know what any of these are, start here: [www.mozilla.com](www.mozilla.com)
+This is a basic HTML with Flex box and Grid layout. Some SASS, transitions and JavaScript function. If you don't know what any of these are, start here: [MDN Web doc](https://developer.mozilla.org/en-US/)
 
 Clone this to the location of your choice, open in your favourite editor and hack away!
 
